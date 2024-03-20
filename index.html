@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Decodificador - Alura Challenge</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="Assest/Logo.svg" alt="">
+  </header>
+
+  <main>
+    <section class="texto__entrada">
+      <form class="texto__entrada__input">
+        <label for="texto__entrada__input__cripto"></label>
+        <textarea name="texto__entrada__input__cripto" id="texto__entrada__input__cripto" placeholder="Digite seu texto"></textarea>
+      </form>
+      <div class="texto__entrada__botao">
+        <button class="texto__entrada__botao__cripto" onclick="btnEncriptar()">Criptografar</button>
+        <button class="texto__entrada__botao__descripto" onclick="btnDesencriptar()">Descriptografar</button>
+      </div>
+    </section>
+
+    <aside class="texto__saida">
+      <div class="texto__saida__container__ativo">
+        <textarea name="texto__saida__cripto" id="texto__saida__cripto"></textarea>
+        <button class="texto__saida__cripto__botao">Copiar</button>
+      </div>
+      <div class="texto__saida__container__inativo">
+        <div class="texto__saida__image">
+          <img class="texto__saida__image__boneco" src="Assest/Boneco.svg" alt="desenho de um boneco segurando uma lupa">
+        </div>
+        <div class="texto__saida__info">
+          <h1>Nenhuma mensagem encontrada</h1>
+          <p>Digite um texto que você deseja Criptografar ou Descriptografar</p>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
